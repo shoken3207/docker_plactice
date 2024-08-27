@@ -8,7 +8,13 @@ export default function Home() {
       
       </ul>
       
-  <Button>Three</Button>
+  <Button color='success'>Three</Button>
+  <Button variant="contained" color="success">
+  Successaa
+</Button>
+  <Button variant="contained" color="success">
+  Successaa
+</Button>
     </div>
   );
 }

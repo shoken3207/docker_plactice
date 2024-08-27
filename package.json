@@ -6,13 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate:init": "prisma migrate dev --name init",
+    "postinstall": "prisma generate",
+    "db:reset": "prisma migrate reset --force",
+    "studio": "prisma studio"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@mui/material": "^5.16.7",
+    "@prisma/client": "^5.18.0",
     "next": "14.2.6",
+    "prisma": "^5.18.0",
     "react": "^18",
     "react-dom": "^18"
   },
